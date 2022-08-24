@@ -1,0 +1,15 @@
+a{
+    color: blue;
+    padding: 20px;
+    margin-top: 50px;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: crimson;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+}

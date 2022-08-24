@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <h1>Grade Calculator</h1>
+    Term 1 Mark: <input type="text" id="txtnumber1" /><br /><br />
+    Term 2 Mark: <input type="text" id="txtnumber2" /><br /><br />
+    Term 3 Mark: <input type="text" id="txtnumber3" /><br /><br />
+    Final Exam Mark: <input type="text" id="txtnumber4" /><br /><br />
+    Term 1 Percentage: <input type="text" id="txtnumber5" /><br /><br />
+    Term 2 Percentage: <input type="text" id="txtnumber6" /><br /><br />
+    Term 3 Percentage: <input type="text" id="txtnumber7" /><br /><br />
+    <input type="button" value="Press Me" onclick="percentage();" /><br /><br />
+    <div id="divOutpuTotal"></div>
+    <div id="divOutputPercentage"></div>
+
+    <script>
+      function percentage() {
+        var total;
+        var total =
+          Number(document.getElementById("txtnumber1").value) +
+          Number(document.getElementById("txtnumber2").value) +
+          Number(document.getElementById("txtnumber3").value) +
+          Number(document.getElementById("txtnumber4").value);
+        document.getElementById("divOutpuTotal").innerHTML = total;
+        document.getElementById("divOutputPercentage").innerHTML = total / 4;
+      }
+    </script>
+  </body>
+</html>
